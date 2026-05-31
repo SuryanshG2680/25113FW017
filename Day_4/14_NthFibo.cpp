@@ -16,7 +16,7 @@ int main(){
       cout << "The 2nd term of Fibonacci Series is \"1\" " ;
 
     else if (n==3)
-      cout << "The 1st term of Fibonacci Series is \"1\" " ; 
+      cout << "The 3rd term of Fibonacci Series is \"1\" " ; 
 
     else{
         for(c=3; c<=n ; c++){
