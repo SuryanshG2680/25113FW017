@@ -1,0 +1,47 @@
+//Program to search second largest element
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int main(){
+
+    int n;
+    cout << "Enter size of array = ";
+    cin >> n;
+
+    if(n<=0)
+    {
+        cout << "Invalid Array size";
+        return 0;
+    }
+
+    vector <int> arr(n);
+    cout << "Enter Array elements: ";
+    for (int i=0; i<n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    //SEARCH
+    int max=arr[0], max2=arr[0];
+
+    for(int i=0; i<n; i++)
+    {
+        if(max < arr[i])
+        {
+            max2=max;
+            max=arr[i];
+        }
+
+        else if (max2<arr[i] && max != arr[i])
+        {
+            max2=arr[i];
+        }
+    }
+
+    cout << "The second largest element is " << max2;
+
+    return 0;
+}
